@@ -6,7 +6,7 @@ import com.example.personal.repository.PersonalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 @RestController
-@RequestMapping("/Personal")
+@RequestMapping("/personal")
 public class PersonalController {
 
     @Autowired

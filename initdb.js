@@ -1,0 +1,11 @@
+db.createCollection('Personal');
+db.Personal.insert({
+   "_id":1,
+   "name":"Bayro",
+   "lastname":"Cuadros",
+   "email":"brianbayrocuadros@gmail.com",
+   "dni":"12345678",
+   "phone":"123456789",
+   "clienttype":"Personal",
+   "seq":1
+});

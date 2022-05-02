@@ -95,7 +95,31 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version>
+            </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>
+                    http://localhost:9000
+                </sonar.host.url>
+                <sonar.login>
+                    af1f98b99f5e14b169d9f5f8b9b1b958d749ceb2
+                </sonar.login>
+                <sonar.projectName>
+                    NTT-PROJECT-PERSONAL
+                </sonar.projectName>
+            </properties>
+        </profile>
+    </profiles>
 </project>
 
