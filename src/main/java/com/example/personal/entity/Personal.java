@@ -17,5 +17,5 @@ public class Personal {
     private String email;
     private String dni;
     private int phone;
-    private String clientype;
+    private String clienttype;
 }

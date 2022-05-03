@@ -4,7 +4,7 @@ services:
   mongopersonal:
     build: 
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfilemongo
         # image: mongo:latest
         #    restart: always
     ports:
@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8084:8084
+      - 8082:8082
     depends_on:
       - "mongopersonal"
     networks:
