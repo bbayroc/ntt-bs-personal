@@ -12,6 +12,8 @@ services:
       - default
       - nttdata-net
   mongopersonal:
+    environment:
+      - MONGO_INITDB_DATABASE=PersonalDB
     build: 
       context: .
       dockerfile: Dockerfilemongo
