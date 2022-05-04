@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "Personal")
 @Data
 public class Personal {
+
     @Id
     @Transient
     public static final String SEQUENCE_NAME = "personal_sequence";
