@@ -5,7 +5,9 @@ services:
     build:
       context: .
       dockerfile: DockerfileRedis
-    ports: ["6379"]
+    ports:
+      - 6379:6379
+    command: --loglevel debug
     networks:
       - default
       - nttdata-net
