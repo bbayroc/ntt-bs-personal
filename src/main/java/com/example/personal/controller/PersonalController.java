@@ -26,7 +26,8 @@ public class PersonalController {
 
     @PostMapping
     public Personal save(@RequestBody Personal personal) {
-        personal.setId(sequenceGeneratorService.generateSequence(Personal.SEQUENCE_NAME));
+        personal.setId(sequenceGeneratorService.
+                generateSequence(Personal.SEQUENCE_NAME));
         return personalRepository.save(personal);
     }
 

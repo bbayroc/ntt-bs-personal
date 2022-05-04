@@ -4,7 +4,7 @@ services:
   redispersonal:
     build:
       context: .
-      dockerfile: DockerfileRedis
+      dockerfile: Dockerfileredis
     ports:
       - 6379:6379
     command: --loglevel debug
