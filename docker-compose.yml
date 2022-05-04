@@ -1,6 +1,14 @@
 version: '3.8'
 
 services:
+  redispersonal:
+    build:
+      context: .
+      dockerfile: DockerfileRedis
+    ports: ["6379"]
+    networks:
+      - default
+      - nttdata-net
   mongopersonal:
     build: 
       context: .
@@ -9,6 +17,8 @@ services:
         #    restart: always
     ports:
       - 27017:27017
+    depends_on:
+      - "redispersonal"
     networks:
       - default
       - nttdata-net
